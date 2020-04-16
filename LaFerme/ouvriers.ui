@@ -1,0 +1,1345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ouvriers</class>
+ <widget class="QWidget" name="ouvriers">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,stop: 0 white, stop: 0.4 gray,stop: 1 green);
+</string>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>771</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,stop: 0 white, stop: 0.4 gray,stop: 1 green);</string>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="page">
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>10</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 20px;</string>
+     </property>
+     <property name="text">
+      <string>Ouvriers</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_home">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,stop: 0 white, stop: 0.4 gray,stop: 1 green);
+border-width: 1px;
+border-color: #339;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+font-size: 11px;</string>
+     </property>
+     <property name="text">
+      <string>Accueil</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>161</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton_ouvriers">
+        <property name="styleSheet">
+         <string notr="true">color: black;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,stop: 0 white, stop: 0.4 gray,stop: 1 green);
+border-width: 1px;
+border-color: #339;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+font-size: 15px;</string>
+        </property>
+        <property name="text">
+         <string>Ouvriers</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_animaux">
+        <property name="styleSheet">
+         <string notr="true">color: black;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,stop: 0 white, stop: 0.4 gray,stop: 1 green);
+border-width: 1px;
+border-color: #339;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+font-size: 15px;</string>
+        </property>
+        <property name="text">
+         <string>Animaux</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_nouritures">
+        <property name="styleSheet">
+         <string notr="true">color: black;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,stop: 0 white, stop: 0.4 gray,stop: 1 green);
+border-width: 1px;
+border-color: #339;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+font-size: 15px;</string>
+        </property>
+        <property name="text">
+         <string>Nourritures</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="styleSheet">
+         <string notr="true">color: black;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,stop: 0 white, stop: 0.4 gray,stop: 1 green);
+border-width: 1px;
+border-color: #339;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+font-size: 15px;</string>
+        </property>
+        <property name="text">
+         <string>Materiels</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_commandes">
+        <property name="styleSheet">
+         <string notr="true">color: black;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,stop: 0 white, stop: 0.4 gray,stop: 1 green);
+border-width: 1px;
+border-color: #339;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+font-size: 15px;</string>
+        </property>
+        <property name="text">
+         <string>Commandes</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_productions">
+        <property name="styleSheet">
+         <string notr="true">color: black;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,stop: 0 white, stop: 0.4 gray,stop: 1 green);
+border-width: 1px;
+border-color: #339;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+font-size: 15px;</string>
+        </property>
+        <property name="text">
+         <string>Productions</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>60</y>
+       <width>109</width>
+       <height>54</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QPushButton" name="pushButton_Gouvriers">
+        <property name="styleSheet">
+         <string notr="true">color: black;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,stop: 0 white, stop: 0.4 gray,stop: 1 green);
+border-width: 1px;
+border-color: #339;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+font-size: 12px;</string>
+        </property>
+        <property name="text">
+         <string>Gestion Ouvriers</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_Gconges">
+        <property name="styleSheet">
+         <string notr="true">color: black;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,stop: 0 white, stop: 0.4 gray,stop: 1 green);
+border-width: 1px;
+border-color: #339;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+font-size: 12px;</string>
+        </property>
+        <property name="text">
+         <string>Gestion Congès</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_3">
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>30</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 15px;</string>
+     </property>
+     <property name="text">
+      <string>Gestions Ouvriers</string>
+     </property>
+    </widget>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>100</y>
+       <width>681</width>
+       <height>371</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: grey;</string>
+     </property>
+     <property name="currentIndex">
+      <number>4</number>
+     </property>
+     <widget class="QWidget" name="Affichage">
+      <attribute name="title">
+       <string>Affichage</string>
+      </attribute>
+      <widget class="QPushButton" name="pushButton_trier_ouv">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>10</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,stop: 0 white, stop: 0.4 gray,stop: 1 green);
+border-width: 1px;
+border-color: #339;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+font-size: 10px;</string>
+       </property>
+       <property name="text">
+        <string>Trier</string>
+       </property>
+      </widget>
+      <widget class="QTableView" name="tab_ouv">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>40</y>
+         <width>591</width>
+         <height>291</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 3px solid gray;
+border-radius: 40px;
+background: white;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="Ajouter">
+      <attribute name="title">
+       <string>Ajouter</string>
+      </attribute>
+      <widget class="QPushButton" name="pushButton_ajouter_ouv">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>290</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,stop: 0 white, stop: 0.4 gray,stop: 1 green);
+border-width: 1px;
+border-color: #339;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+font-size: 10px;</string>
+       </property>
+       <property name="text">
+        <string>Ajouter</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>30</y>
+         <width>81</width>
+         <height>211</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_id_ta_6">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>Id</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_nom">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>Nom</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_prenom">
+          <property name="text">
+           <string>Prenom</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_pwd">
+          <property name="text">
+           <string>Mot de passe</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>30</y>
+         <width>171</width>
+         <height>211</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_id_ouv"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_nom_ouv"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_prenom_ouv"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_pwd_ouv"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>30</y>
+         <width>261</width>
+         <height>221</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QLabel" name="label_rue">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>Rue</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_codepostal">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>Code postal</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_contact">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>Contact</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_ville">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>Ville</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QLineEdit" name="lineEdit_rue"/>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_code_postal"/>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_contact"/>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_ville"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="Modifier">
+      <attribute name="title">
+       <string>Modifier</string>
+      </attribute>
+      <widget class="QPushButton" name="pushButton_modifier_ouv">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>290</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,stop: 0 white, stop: 0.4 gray,stop: 1 green);
+border-width: 1px;
+border-color: #339;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+font-size: 10px;</string>
+       </property>
+       <property name="text">
+        <string>Modifier</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_4">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>30</y>
+         <width>194</width>
+         <height>219</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_rue_mod"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_code_postal_mod"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_contact_mod"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_ville_mod"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_5">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>30</y>
+         <width>171</width>
+         <height>211</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_id_ouv_mod"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_nom_ouv_mod"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_prenom_ouv_mod"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_pwd_ouv_mod"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>30</y>
+         <width>81</width>
+         <height>211</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <widget class="QLabel" name="label_id_ta_7">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>Id</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_nom_2">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>Nom</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_prenom_2">
+          <property name="text">
+           <string>Prenom</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_pwd_2">
+          <property name="text">
+           <string>Mot de passe</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>29</y>
+         <width>131</width>
+         <height>211</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_10">
+        <item>
+         <widget class="QLabel" name="label_contact_2">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>Contact</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_codepostal_2">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>Code postal</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_rue_2">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>Rue</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_ville_2">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>Ville</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="Supprimer">
+      <attribute name="title">
+       <string>Supprimer</string>
+      </attribute>
+      <widget class="QLabel" name="label_id_ts">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>60</y>
+         <width>47</width>
+         <height>14</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_id_ouv_2">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>49</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_sup_ouv">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>190</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,stop: 0 white, stop: 0.4 gray,stop: 1 green);
+border-width: 1px;
+border-color: #339;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+font-size: 10px;</string>
+       </property>
+       <property name="text">
+        <string>Supprimer</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="Rechercher">
+      <attribute name="title">
+       <string>Rechercher</string>
+      </attribute>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>10</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Nom à rechercher</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_recherche_ouv">
+       <property name="geometry">
+        <rect>
+         <x>422</x>
+         <y>9</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QTableView" name="tab_ouv_rech">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>40</y>
+         <width>591</width>
+         <height>291</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 3px solid gray;
+border-radius: 40px;
+background: white;</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="pushButton_retour">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,stop: 0 white, stop: 0.4 gray,stop: 1 green);
+border-width: 1px;
+border-color: #339;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+font-size: 11px;</string>
+     </property>
+     <property name="text">
+      <string>Retour</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>40</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 15px;</string>
+     </property>
+     <property name="text">
+      <string>Gestions Congès</string>
+     </property>
+    </widget>
+    <widget class="QTabWidget" name="tabWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>100</y>
+       <width>681</width>
+       <height>371</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: grey;
+</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="Affichage_2">
+      <attribute name="title">
+       <string>Affichage</string>
+      </attribute>
+      <widget class="QPushButton" name="pushButton_trier_cong">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>10</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,stop: 0 white, stop: 0.4 gray,stop: 1 green);
+border-width: 1px;
+border-color: #339;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+font-size: 10px;</string>
+       </property>
+       <property name="text">
+        <string>Trier</string>
+       </property>
+      </widget>
+      <widget class="QTableView" name="tab_conges">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>30</y>
+         <width>591</width>
+         <height>291</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 3px solid gray;
+border-radius: 40px;
+background: white;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="Ajouter_2">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <attribute name="title">
+       <string>Ajouter</string>
+      </attribute>
+      <widget class="QPushButton" name="pushButton_ajouter_cong">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>270</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,stop: 0 white, stop: 0.4 gray,stop: 1 green);
+border-width: 1px;
+border-color: #339;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+font-size: 10px;</string>
+       </property>
+       <property name="text">
+        <string>Ajouter</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_id_ta_2">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>200</y>
+         <width>47</width>
+         <height>14</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Id Ouvrier</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_id_ta_3">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>240</y>
+         <width>47</width>
+         <height>14</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Id Admin</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_qte_ta">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>120</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Date retour </string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_id_cong_ouv">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>200</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_nom_ta">
+       <property name="geometry">
+        <rect>
+         <x>76</x>
+         <y>80</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Date depart</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_Date_depart">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>80</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_solde_conge">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>160</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_id_ta">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>40</y>
+         <width>47</width>
+         <height>14</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Id</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_Date_retour">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>120</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_id_conges">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>40</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_date_ta">
+       <property name="geometry">
+        <rect>
+         <x>86</x>
+         <y>160</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Solde Conges</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_admin">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>240</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="Modifier_2">
+      <attribute name="title">
+       <string>Modifier</string>
+      </attribute>
+      <widget class="QPushButton" name="pushButton_modifier_cong">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>270</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #88d, stop: 0.1 #99e, stop: 0.49 #77c, stop: 0.5 #66b, stop: 1 #77c);
+border-width: 1px;
+border-color: #339;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+font-size: 10px;</string>
+       </property>
+       <property name="text">
+        <string>Modifier</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_id_ta_4">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>190</y>
+         <width>47</width>
+         <height>14</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Id Ouvrier</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_id_ta_5">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>230</y>
+         <width>47</width>
+         <height>14</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Id Admin</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_qte_ta_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>110</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Date retour </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_nom_ta_2">
+       <property name="geometry">
+        <rect>
+         <x>46</x>
+         <y>70</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Date depart</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_id_cong_ouv_mod">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>190</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_id_ta_8">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>30</y>
+         <width>47</width>
+         <height>14</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Id</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_Date_depart_mod">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>70</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_solde_conge_mod">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>150</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_id_conges_mod">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>30</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_Date_retour_mod">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>110</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_date_ta_2">
+       <property name="geometry">
+        <rect>
+         <x>56</x>
+         <y>150</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Solde Conges</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_admin_mod">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>230</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="Supprimer_2">
+      <attribute name="title">
+       <string>Supprimer</string>
+      </attribute>
+      <widget class="QLineEdit" name="lineEdit_id_supp_cong">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>50</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_id_2">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>61</y>
+         <width>47</width>
+         <height>14</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_sup_cong">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>191</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #88d, stop: 0.1 #99e, stop: 0.49 #77c, stop: 0.5 #66b, stop: 1 #77c);
+border-width: 1px;
+border-color: #339;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+font-size: 10px;</string>
+       </property>
+       <property name="text">
+        <string>Supprimer</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="Rechercher_2">
+      <attribute name="title">
+       <string>Rechercher</string>
+      </attribute>
+      <widget class="QLineEdit" name="lineEdit_rech_cong">
+       <property name="geometry">
+        <rect>
+         <x>432</x>
+         <y>9</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>10</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Nom à rechercher</string>
+       </property>
+      </widget>
+      <widget class="QTableView" name="tab_conge_rech">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>30</y>
+         <width>591</width>
+         <height>291</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 3px solid gray;
+border-radius: 40px;
+background: white;</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="pushButton_retour_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,stop: 0 white, stop: 0.4 gray,stop: 1 green);
+border-width: 1px;
+border-color: #339;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+font-size: 11px;</string>
+     </property>
+     <property name="text">
+      <string>Retour</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

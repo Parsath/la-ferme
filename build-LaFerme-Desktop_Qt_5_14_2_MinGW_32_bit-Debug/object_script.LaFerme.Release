@@ -1,0 +1,16 @@
+release/animaux.o
+release/conges.o
+release/connexion.o
+release/g_animaux.o
+release/g_ouvriers.o
+release/main.o
+release/mainwindow.o
+release/materiels.o
+release/materiels_a.o
+release/materiels_e.o
+release/ouvriers.o
+release/qrc_ressources.o
+release/moc_g_animaux.o
+release/moc_mainwindow.o
+release/moc_materiels.o
+release/moc_ouvriers.o

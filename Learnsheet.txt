@@ -1,0 +1,11 @@
+Day 1: 16/05/2020 19h35
+
+    STEP 1:
+        *Complete the CRUD
+
+    Notes:
+        *
+
+WORKTIME:
+
+Stopping time: 16/05/2020

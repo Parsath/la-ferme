@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/sons"/>
+    <qresource prefix="/">
+        <file>sons/button.mp3</file>
+    </qresource>
+</RCC>

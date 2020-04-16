@@ -1,0 +1,16 @@
+debug/animaux.o
+debug/conges.o
+debug/connexion.o
+debug/g_animaux.o
+debug/g_ouvriers.o
+debug/main.o
+debug/mainwindow.o
+debug/materiels.o
+debug/materiels_a.o
+debug/materiels_e.o
+debug/ouvriers.o
+debug/qrc_ressources.o
+debug/moc_g_animaux.o
+debug/moc_mainwindow.o
+debug/moc_materiels.o
+debug/moc_ouvriers.o
