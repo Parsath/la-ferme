@@ -4,8 +4,8 @@ Day 1: 16/05/2020 19h35
         *Complete the CRUD
 
     Notes:
-        *
+        *I can't understand sh*t, I'm actually really tired, will continue tomorow.
 
-WORKTIME:
+WORKTIME: 25M
 
-Stopping time: 16/05/2020
+Stopping time: 16/05/2020 20h14
