@@ -1,4 +1,4 @@
-Day 1: 16/05/2020 19h35
+Day 1: 16/04/2020 19h35
 
     STEP 1:
         *Complete the CRUD
@@ -8,4 +8,20 @@ Day 1: 16/05/2020 19h35
 
 WORKTIME: 25M
 
-Stopping time: 16/05/2020 20h14
+Stopping time: 16/04/2020 20h14
+
+
+
+Day 2: 17/04/2020 12h43
+
+    STEP 1 IN PROGRESS
+
+    Notes:
+        *Going through an Oracle Database crash course.
+        *Created my own folder, to organise, my own CRUD work.
+        *Drawed my draft sheet for my main interfaces.
+        *The core window's drawn.
+
+WORKTIME: 3H53M
+
+Stopping time: 17/04/2020 20h35

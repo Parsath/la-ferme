@@ -4,12 +4,16 @@
 
 class Connexion
 {
-private:
-    QSqlDatabase db;
-public:
-    Connexion();
-    bool ouvrirConnexion();
-    void fermerConnexion();
+
+    public:
+        Connexion();
+        bool ouvrirConnexion();
+        void fermerConnexion();
+
+
+
+    private:
+        QSqlDatabase db;
 
 };
 

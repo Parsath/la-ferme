@@ -15,5 +15,5 @@ create table abris
 
 create table animaux
 (
-id_ani number, type_ani varchar2(100), qualite varchar2(100), prix number
+id_ani number, race_ani varchar2(100), qualite varchar2(100), valeur number, objectif varchar2(100), foyer varchar2(100), âge number
 );
