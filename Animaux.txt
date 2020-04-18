@@ -1,0 +1,6 @@
+private: 
+	nom
+	âge
+	objectif -> bétail / divertissements / vente / produits dérivés
+	foyer
+	valeur

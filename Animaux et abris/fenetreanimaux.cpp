@@ -40,6 +40,7 @@ FenetreAnimaux::FenetreAnimaux() : QWidget()
 
     this->setLayout(m_mainLayout);
 
+    QObject::connect(ajouter, SIGNAL(clicked()), this, SLOT(ouvrirFenetreAjout()));
     QObject::connect(quitter, SIGNAL(clicked()), this, SLOT(close()));
 }
 
@@ -49,4 +50,10 @@ void FenetreAnimaux::creationOnglets(QString race, QTabWidget &onglets)
     QPushButton *bouton = new QPushButton(race, fenetre);
 
     onglets.addTab(fenetre, race);
+}
+
+void FenetreAnimaux::ouvrirFenetreAjout()
+{
+    AjouterAnimal *fenetreAjout = new AjouterAnimal(this);
+    fenetreAjout->show();
 }

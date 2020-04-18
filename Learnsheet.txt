@@ -25,3 +25,17 @@ Day 2: 17/04/2020 12h43
 WORKTIME: 3H53M
 
 Stopping time: 17/04/2020 20h35
+
+
+
+Day 3: 18/04/2020 12h30
+
+    STEP 1 IN PROGRESS
+
+    Notes:
+        *Created the best ADD interface ever LOL, now I need to implement the changes to the Database, even though this is going to be ( I think) an easy part
+        *I think that'll be all for today.
+
+WORKTIME: 4H13M
+
+Stopping time: 18/04/2020 17h38

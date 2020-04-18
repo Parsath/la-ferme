@@ -12,16 +12,19 @@
 #include <QVector>
 #include <QTabWidget>
 #include <QLayout>
+#include "ajouteranimal.h"
 
 class FenetreAnimaux : public QWidget
 {
     Q_OBJECT
 
     public:
-        FenetreAnimaux();
-        void creationOnglets(QString race, QTabWidget &onglets);
+
+        FenetreAnimaux();   //  Le Constructeur va me permettre de créer la fenêtre Animaux
+        void creationOnglets(QString race, QTabWidget &onglets);    //  Cette fonction tire les races présentes dans le fichier races.txt et les classe dans le TabWidget
 
     public slots:
+        void ouvrirFenetreAjout();
 
     signals:
 
