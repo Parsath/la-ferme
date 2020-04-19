@@ -9,20 +9,29 @@ int main(int argc, char *argv[])
    QApplication a(argc, argv);
 
    FenetreAnimaux fenetreAnimaux;
-   fenetreAnimaux.show();
 
-   /*Connexion c;
+   Connexion c;
    bool test= c.ouvrirConnexion();
 
      if(test)
-   {
-       //w.show();
-   }
-        else
-           QMessageBox::information(nullptr, QObject::tr("database is not open"),
-              QObject::tr("Echec de la connexion.\n""Click Cancel to exit."), QMessageBox::Cancel);
+    {
+       fenetreAnimaux.show();
+    }
+    else
+     {
+        QMessageBox::information(nullptr, QObject::tr("database is not open"),
+        QObject::tr("Echec de la connexion.\n""Click Cancel to exit."), QMessageBox::Cancel);
+     }
 
-    */
+     /*GestionAnimal essai("Fat7i","Cheval","AAA", "Equitation", 123, "Etable", 999);
+     if(essai.ajouterAnimal())
+     {
+        //essai.supprimerAnimal("Fat7i");
+     }
+     else
+     {
+         QMessageBox::critical(nullptr,"Erreur", "L'ajout n'a pas marché");
+     }*/
 
     return a.exec();
 }

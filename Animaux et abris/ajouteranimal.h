@@ -15,6 +15,7 @@
 #include <QFile>
 #include <QTextStream>
 #include <QMessageBox>
+#include "gestionanimal.h"
 
 class AjouterAnimal : public QWizard
 {
@@ -29,6 +30,7 @@ class AjouterAnimal : public QWizard
     signals:
 
     private:
+        GestionAnimal *m_animal;
 };
 
 class PageUne : public QWizardPage
@@ -67,6 +69,7 @@ class PageUne : public QWizardPage
         QLineEdit *m_nomRace;
         QDialog *m_ajoutFoyer;
         QLineEdit *m_nomFoyer;
+
 
 };
 

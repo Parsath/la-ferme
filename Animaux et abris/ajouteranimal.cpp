@@ -10,9 +10,30 @@ AjouterAnimal::AjouterAnimal(QWidget *parent) : QWizard(parent)
 
 void AjouterAnimal::accept()
 {
-    /*
-     *  Ici la fonction de transmission des données à la Base de données
-     */
+    QString surnom = field("surnom").toString();
+    QString race = field("race").toString();
+    QString foyer = field("foyer").toString();
+    QString qualites = field("qualites").toString();
+    int age = field("age").toInt();
+    QString objectifs = field("objectifs").toString();
+    int valeur = field("valeur").toInt();
+
+    if( GestionAnimal::verifierExistenceSurnom(surnom) )
+    {
+        QMessageBox::critical(nullptr,"Erreur","Surnom déjà existant! <br>Veuillez change de surnom.");
+        return;
+    }
+
+    m_animal = new GestionAnimal(surnom, race, qualites, objectifs, valeur, foyer, age);
+    if(m_animal->ajouterAnimal())
+    {
+        QMessageBox::information(nullptr,"Ajout","Votre ajout a été effectué avec succès");
+    }
+    else
+    {
+        QMessageBox::critical(nullptr,"Ajout","Votre ajout a échoué");
+    }
+
     QDialog::accept();
 }
 
@@ -42,8 +63,8 @@ PageUne::PageUne(QWidget *parent) : QWizardPage(parent)
     m_foyerAdd = new QPushButton("Aj.", this);
 
     registerField("surnom*",m_surnom);
-    registerField("race",m_race);
-    registerField("foyer",m_foyer);
+    registerField("race",m_race,"currentText","currentTextChanged");
+    registerField("foyer",m_foyer,"currentText","currentTextChanged");
 
     QHBoxLayout *m_surnomLayout = new QHBoxLayout();
     m_raceLayout = new QHBoxLayout();
@@ -275,9 +296,11 @@ PageDeux::PageDeux(QWidget *parent) : QWizardPage(parent)
     m_valeurLabel->setBuddy(m_valeur);
     QHBoxLayout *m_valeurLayout = new QHBoxLayout();
 
-    registerField("qualites",m_qualites);
+    m_valeur->setMaximum(99999);
+
+    registerField("qualites",m_qualites,"currentText","currentTextChanged");
     registerField("age*",m_age);
-    registerField("objectifs",m_objectifs);
+    registerField("objectifs",m_objectifs,"currentText","currentTextChanged");
     registerField("valeur*",m_valeur);
 
     m_mainLayoutPageDeux = new QVBoxLayout();
