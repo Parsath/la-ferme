@@ -2,6 +2,7 @@
 
 FenetreAnimaux::FenetreAnimaux() : QWidget()
 {
+
     m_onglets = new QTabWidget(this);
     m_race = new QString();
     m_mainLayout = new QVBoxLayout();
@@ -46,10 +47,14 @@ FenetreAnimaux::FenetreAnimaux() : QWidget()
 
 void FenetreAnimaux::creationOnglets(QString race, QTabWidget &onglets)
 {
-    QWidget *fenetre = new QWidget();
-    QPushButton *bouton = new QPushButton(race, fenetre);
+    //QSqlQueryModel *maTable = new QSqlQueryModel();
+    //maTable = GestionAnimal::afficherAnimaux(race);
 
-    onglets.addTab(fenetre, race);
+    QTableView *view = new QTableView();
+
+    view = GestionAnimal::afficherAnimaux(race);
+
+    onglets.addTab(view, race);
 }
 
 void FenetreAnimaux::ouvrirFenetreAjout()

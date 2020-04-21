@@ -9,6 +9,9 @@
 #include <QSqlQueryModel>
 #include <QMessageBox>
 #include <QDialog>
+#include <QTableView>
+#include <QSqlTableModel>
+#include <QTableWidget>
 
 class GestionAnimal
 {
@@ -19,7 +22,7 @@ class GestionAnimal
         static bool verifierFoyerValide(const QString &race,const QString &foyer);
         bool supprimerAnimal(QString surnom);
         bool ajouterAnimal();
-        QSqlQueryModel * afficherAnimaux(const QString &race);
+        static QTableView * afficherAnimaux(const QString &race);
 
 
     private:

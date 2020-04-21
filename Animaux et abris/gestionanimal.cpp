@@ -22,8 +22,8 @@ int GestionAnimal::setId()
         }
 
 
-        QString res = QString::number(total);
-        QMessageBox::information(nullptr,"This",res);
+        /*QString res = QString::number(total);
+        QMessageBox::information(nullptr,"This",res);*/
 
 
     }
@@ -84,25 +84,33 @@ bool GestionAnimal::supprimerAnimal(QString surnom)
  * Affichage
  */
 
-QSqlQueryModel * GestionAnimal::afficherAnimaux(const QString &race)
+QTableView * GestionAnimal::afficherAnimaux(const QString &race)
 {
-    /*
     QSqlQuery query;
     query.prepare("select * from ANIMAUX WHERE RACE_ANI = :race");
-    QSqlQueryModel *model= new QSqlQueryModel();
+    query.bindValue(":race",race);
+    query.exec();
 
-    model->setQuery("select * from ANIMAUX WHERE RACE_ANI = :race") ;
-    model->bindValue(":race",race);
+    QSqlQueryModel *model= new QSqlQueryModel();
+    model->setQuery(query);
           model->setHeaderData(0,Qt::Horizontal, QObject::tr("ID"));
           model->setHeaderData(1,Qt::Horizontal, QObject::tr("RACE"));
-          model->setHeaderData(3,Qt::Horizontal, QObject::tr("QUALITE"));
-          model->setHeaderData(4,Qt::Horizontal, QObject::tr("VALEUR"));
-          model->setHeaderData(5,Qt::Horizontal, QObject::tr("OBJECTIF"));
-          model->setHeaderData(6,Qt::Horizontal, QObject::tr("FOYER"));
-          model->setHeaderData(7,Qt::Horizontal, QObject::tr("ÂGE"));
-          model->setHeaderData(8,Qt::Horizontal, QObject::tr("SURNOM"));
-          return model;
-    */
+          model->setHeaderData(2,Qt::Horizontal, QObject::tr("QUALITE"));
+          model->setHeaderData(3,Qt::Horizontal, QObject::tr("VALEUR"));
+          model->setHeaderData(4,Qt::Horizontal, QObject::tr("OBJECTIF"));
+          model->setHeaderData(5,Qt::Horizontal, QObject::tr("FOYER"));
+          model->setHeaderData(6,Qt::Horizontal, QObject::tr("ÂGE"));
+          model->setHeaderData(7,Qt::Horizontal, QObject::tr("SURNOM"));
+
+     QTableView *view = new QTableView();
+
+    view->setModel(model);
+
+    view->show();
+    view->hideColumn(0);
+    view->hideColumn(1);
+
+    return view;
 }
 
 /*

@@ -12,6 +12,9 @@
 #include <QVector>
 #include <QTabWidget>
 #include <QLayout>
+#include <QTableView>
+#include <QSqlQuery>
+#include <QSqlDatabase>
 #include "ajouteranimal.h"
 
 class FenetreAnimaux : public QWidget
