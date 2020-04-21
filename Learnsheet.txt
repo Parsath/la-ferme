@@ -53,3 +53,17 @@ Day 4: 19/04/2020 12h15
 WORKTIME: 4H00M
 
 Stopping time: 19H25
+
+
+
+Day 5: 20/04/2020 20h40
+
+    STEP 1 IN PROGRESS
+
+    Notes:
+        *Display fixed and dynamic.
+	*Still need to add the delete button and the update function.
+
+WORKTIME: 2H25M
+
+Stopping time: 23H05
