@@ -15,5 +15,15 @@ create table abris
 
 create table animaux
 (
-id_ani number, race_ani varchar2(100), qualite varchar2(100), valeur number, objectif varchar2(100), foyer varchar2(100), âge number
+id_ani number, race_ani varchar2(100), qualite varchar2(100), valeur number, objectif varchar2(100), foyer varchar2(100), Ã¢ge number
 );
+ 
+CREATE TABLE NOURRITURE
+(	
+    ID NUMBER NOT NULL ENABLE, ALIMENT VARCHAR2(20 BYTE), ANIMAL VARCHAR2(20 BYTE), TYPE VARCHAR2(20 BYTE), QT NUMBER
+);
+  
+CREATE TABLE NOURRITURE_V
+ (	
+     ID NUMBER NOT NULL ENABLE, ALIMENT VARCHAR2(20 BYTE), PLANTE VARCHAR2(20 BYTE), TYPE VARCHAR2(20 BYTE), QT NUMBER
+ );
