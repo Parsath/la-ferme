@@ -35,6 +35,23 @@ private slots:
     void on_pushButton_trier_t_clicked();
     void on_lineEdit_recherche_textChanged(const QString &arg1);
 
+    void on_comboBox_currentIndexChanged(const QString &arg1);
+
+    void on_tab_mat_t_activated(const QModelIndex &index);
+
+    void on_pushButton_2_clicked();
+
+    void on_pushButton_actu_clicked();
+
+    void on_comboBox_2_currentIndexChanged(const QString &arg1);
+
+    void on_tab_mat_activated(const QModelIndex &index);
+
+    void on_pushButton_write_clicked();
+
+    void on_pushButton_read_clicked();
+
+    void makePlot();
 private:
     Ui::Materiels *ui;
     Materiels_E tmp_mat;
