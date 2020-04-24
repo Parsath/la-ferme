@@ -12,6 +12,7 @@
 #include <QTableView>
 #include <QSqlTableModel>
 #include <QTableWidget>
+#include <QPushButton>
 
 class GestionAnimal
 {

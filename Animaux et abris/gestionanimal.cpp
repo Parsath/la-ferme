@@ -102,13 +102,16 @@ QTableView * GestionAnimal::afficherAnimaux(const QString &race)
           model->setHeaderData(6,Qt::Horizontal, QObject::tr("ÂGE"));
           model->setHeaderData(7,Qt::Horizontal, QObject::tr("SURNOM"));
 
-     QTableView *view = new QTableView();
+    QTableView *view = new QTableView();
+    QPushButton *bouton = new QPushButton("help");
 
     view->setModel(model);
+    view->setIndexWidget(model->index(1,9),bouton);
 
     view->show();
     view->hideColumn(0);
     view->hideColumn(1);
+
 
     return view;
 }

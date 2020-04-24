@@ -1,4 +1,5 @@
 Cheval
 Vache
 Chien
-Bghal
+Chat
+Chien
