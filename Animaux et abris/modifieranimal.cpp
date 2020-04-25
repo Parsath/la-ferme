@@ -1,14 +1,14 @@
-#include "ajouteranimal.h"
+#include "modifieranimal.h"
 
-AjouterAnimal::AjouterAnimal(QWidget *parent) : QWizard(parent)
+ModifierAnimal::ModifierAnimal(QWidget *parent) : QWizard(parent)
 {
-    addPage(new PageUne);
-    addPage(new PageDeux);
+    addPage(new PageUneModification);
+    addPage(new PageDeuxModification);
 
-    setWindowTitle(tr("Ajouter Animal"));
+    setWindowTitle(tr("Modifier Animal"));
 }
 
-void AjouterAnimal::accept()
+void ModifierAnimal::accept()
 {
     QString surnom = field("surnom").toString();
     QString race = field("race").toString();
@@ -28,28 +28,27 @@ void AjouterAnimal::accept()
 
     if(m_animal->ajouterAnimal())
     {
-        QMessageBox::information(nullptr,"Ajout","Votre ajout a été effectué avec succès");
+        QMessageBox::information(nullptr,"Modification","Votre modification a été effectué avec succès");
     }
     else
     {
-        QMessageBox::critical(nullptr,"Ajout","Votre ajout a échoué");
+        QMessageBox::critical(nullptr,"Modification","Votre modification a échoué");
     }
 
     GestionAnimal::afficherAnimaux(race);
 
+
     QDialog::accept();
 }
 
-
-
 //          Page Une d'ajout            //
 
-PageUne::PageUne(QWidget *parent) : QWizardPage(parent)
+PageUneModification::PageUneModification(QWidget *parent) : QWizardPage(parent)
 {
-    setTitle("Première page d'ajout de votre Animal");
+    setTitle("Première page de modification de votre Animal");
     setSubTitle("Veuillez remplir tous les champs.");
 
-    m_interfaceAjoutPageUne = new QGroupBox("Ajouter un animal", this);
+    m_interfaceAjoutPageUne = new QGroupBox("Modifier un animal", this);
 
     m_surnom = new QLineEdit(this);
     m_surnomLabel = new QLabel("&Surnom : ",this);
@@ -132,7 +131,7 @@ PageUne::PageUne(QWidget *parent) : QWizardPage(parent)
     //QObject::connect(m_ajoutRace, SIGNAL(accepted()), this, SLOT(update()));
 }
 
-void PageUne::ajouterRace()
+void PageUneModification::ajouterRace()
 {
     m_ajoutRace = new QDialog(this);
     m_nomRace = new QLineEdit(m_ajoutRace);
@@ -156,7 +155,7 @@ void PageUne::ajouterRace()
     QObject::connect(m_ajouterRace, SIGNAL(clicked()), this, SLOT(validerRace()));
 }
 
-void PageUne::validerRace()
+void PageUneModification::validerRace()
 {
 
     if( !m_nomRace->text().isEmpty() )
@@ -183,7 +182,7 @@ void PageUne::validerRace()
     m_ajoutRace->accept();
 }
 
-void PageUne::ajouterFoyer()
+void PageUneModification::ajouterFoyer()
 {
     m_ajoutFoyer = new QDialog(this);
     m_nomFoyer = new QLineEdit(m_ajoutFoyer);
@@ -207,7 +206,7 @@ void PageUne::ajouterFoyer()
     QObject::connect(m_ajouterFoyer, SIGNAL(clicked()), this, SLOT(validerFoyer()));
 }
 
-void PageUne::validerFoyer()
+void PageUneModification::validerFoyer()
 {
 
     if( !m_nomFoyer->text().isEmpty() )
@@ -238,12 +237,12 @@ void PageUne::validerFoyer()
 
 //          Page Deux d'ajout            //
 
-PageDeux::PageDeux(QWidget *parent) : QWizardPage(parent)
+PageDeuxModification::PageDeuxModification(QWidget *parent) : QWizardPage(parent)
 {
-    setTitle("Deuxième page d'ajout de votre Animal");
+    setTitle("Deuxième page de modification de votre Animal");
     setSubTitle("Veuillez remplir tous les champs.");
 
-    m_interfaceAjoutPageDeux = new QGroupBox("Ajouter un animal",this);
+    m_interfaceAjoutPageDeux = new QGroupBox("Modifier un animal",this);
 
     m_qualites = new QComboBox(this);
     m_qualitesLabel = new QLabel("Qualités : ",this);

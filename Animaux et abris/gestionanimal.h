@@ -21,9 +21,9 @@ class GestionAnimal
         GestionAnimal(QString surnom, QString race, QString qualite, QString objectif, int valeur, QString foyer, int age);
         static bool verifierExistenceSurnom(const QString &surnom);
         static bool verifierFoyerValide(const QString &race,const QString &foyer);
-        bool supprimerAnimal(QString surnom);
+        static bool supprimerAnimal(QString surnom);
         bool ajouterAnimal();
-        static QTableView * afficherAnimaux(const QString &race);
+        static QSqlQueryModel * afficherAnimaux(const QString &race);
 
 
     private:

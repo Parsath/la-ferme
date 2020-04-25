@@ -16,12 +16,14 @@ SOURCES += \
     fenetreanimaux.cpp \
     gestionanimal.cpp \
     main.cpp \
+    modifieranimal.cpp
 
 HEADERS += \
     ajouteranimal.h \
     connexion.h \
-    fenetreanimaux.h \ \
-    gestionanimal.h
+    fenetreanimaux.h \
+    gestionanimal.h \
+    modifieranimal.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

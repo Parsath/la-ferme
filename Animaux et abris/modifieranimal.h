@@ -1,5 +1,5 @@
-#ifndef AJOUTERANIMAL_H
-#define AJOUTERANIMAL_H
+#ifndef MODIFIERANIMAL_H
+#define MODIFIERANIMAL_H
 
 #include <QApplication>
 #include <QWidget>
@@ -17,25 +17,24 @@
 #include <QMessageBox>
 #include "gestionanimal.h"
 
-class AjouterAnimal : public QWizard
+class ModifierAnimal : public QWizard
 {
     Q_OBJECT
-
     public:
-        AjouterAnimal(QWidget *parent = nullptr);
+        ModifierAnimal(QWidget *parent = nullptr);
 
-        void accept() override;
+    void accept() override;
 
     private:
         GestionAnimal *m_animal;
 };
 
-class PageUne : public QWizardPage
+class PageUneModification : public QWizardPage
 {
     Q_OBJECT
 
     public:
-        PageUne(QWidget *parent = nullptr);
+         PageUneModification(QWidget *parent = nullptr);
 
     public slots:
         void ajouterRace();
@@ -67,12 +66,12 @@ class PageUne : public QWizardPage
 
 };
 
-class PageDeux : public QWizardPage
+class PageDeuxModification : public QWizardPage
 {
     Q_OBJECT
 
     public:
-        PageDeux(QWidget *parent = nullptr);
+        PageDeuxModification(QWidget *parent = nullptr);
 
     private:
         QGroupBox *m_interfaceAjoutPageDeux;
@@ -89,4 +88,5 @@ class PageDeux : public QWizardPage
 
 };
 
-#endif // AJOUTERANIMAL_H
+
+#endif // MODIFIERANIMAL_H

@@ -80,3 +80,21 @@ Day 6: 21/04/2020 20h20
 WORKTIME: 1H00M
 
 Stopping time: 21/04/2020 23h05
+
+
+
+Day 7: 25/04/2020 13h13
+
+    STEP 1 IN PROGRESS
+
+    Notes:
+        *I Fixed the layout
+        *Added A DELETE BUTTON
+        *Made my Table Dynamic
+        *Added an UPDATE BUTTON
+        *Fixed the Auto Increment on my ID
+        *ALL THE CRUD IS WORKING
+
+WORKTIME: 5H10M
+
+Stopping time: 25/04/2020 19h07

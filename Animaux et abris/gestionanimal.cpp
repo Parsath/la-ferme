@@ -4,9 +4,10 @@ GestionAnimal::GestionAnimal(QString surnom, QString race, QString qualite, QStr
     : m_surnomAnimal(surnom), m_raceAnimal(race), m_qualiteAnimal(qualite),
       m_valeurAnimal(valeur), m_objectifAnimal(objectif), m_foyerAnimal(foyer), m_ageAnimal(age)
 {
-    m_idAnimal = this->setId();
+    m_idAnimal = NULL;
 }
 
+/*
 int GestionAnimal::setId()
 {
     int total(0);
@@ -22,14 +23,12 @@ int GestionAnimal::setId()
         }
 
 
-        /*QString res = QString::number(total);
-        QMessageBox::information(nullptr,"This",res);*/
-
-
     }
     query.clear();
     return total+1;
 }
+*/
+
 
 bool GestionAnimal::verifierExistenceSurnom(const QString &surnom)
 {
@@ -84,7 +83,7 @@ bool GestionAnimal::supprimerAnimal(QString surnom)
  * Affichage
  */
 
-QTableView * GestionAnimal::afficherAnimaux(const QString &race)
+QSqlQueryModel * GestionAnimal::afficherAnimaux(const QString &race)
 {
     QSqlQuery query;
     query.prepare("select * from ANIMAUX WHERE RACE_ANI = :race");
@@ -102,6 +101,8 @@ QTableView * GestionAnimal::afficherAnimaux(const QString &race)
           model->setHeaderData(6,Qt::Horizontal, QObject::tr("ÂGE"));
           model->setHeaderData(7,Qt::Horizontal, QObject::tr("SURNOM"));
 
+
+    /*
     QTableView *view = new QTableView();
     QPushButton *bouton = new QPushButton("help");
 
@@ -111,9 +112,10 @@ QTableView * GestionAnimal::afficherAnimaux(const QString &race)
     view->show();
     view->hideColumn(0);
     view->hideColumn(1);
+    */
 
 
-    return view;
+    return model;
 }
 
 /*
