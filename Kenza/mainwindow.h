@@ -1,6 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-#include <nourriture.h>
+
+#include <nourriture_v.h>
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
@@ -14,6 +15,7 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
 private slots:
 
     void on_butAjouter_clicked();
@@ -22,7 +24,7 @@ private slots:
 
     void on_butModifier_clicked();
 
-    void on_Nourriture_Animal_tabBarClicked(int index);
+    void on_Nourriture_Vegetale_tabBarClicked(int index);
 
     void on_butOK_clicked();
 
@@ -40,6 +42,12 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    nourriture tmpnourriture;
+    nourriture_v tmpnourriture_v;
 };
 #endif // MAINWINDOW_H
+
+
+
+
+
+
