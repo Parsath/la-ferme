@@ -295,7 +295,7 @@ font: 75 9pt &quot;MS Shell Dlg 2&quot;;</string>
      <number>-1</number>
     </property>
     <property name="styleSheet">
-     <string notr="true"/>
+     <string notr="true">border-image: url(home/Project/interface_Nourriture/icone/poubelle.png) 3 10 3 10;</string>
     </property>
     <property name="text">
      <string>Supprimer</string>
@@ -379,6 +379,33 @@ font: 11pt &quot;Segoe Print&quot;;</string>
     </property>
     <property name="text">
      <string>Nourriture Animale</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>200</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 120, 215);</string>
+    </property>
+    <property name="text">
+     <string>Imprimer</string>
     </property>
    </widget>
   </widget>

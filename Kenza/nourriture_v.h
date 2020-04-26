@@ -32,7 +32,7 @@ public:
     QSqlQueryModel * trieQt();
     QSqlQueryModel * trieId();
 
-    bool controle_id(int);
+    static bool controle_id(const int);
 };
 
 #endif // NOURRITURE_V_H

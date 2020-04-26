@@ -34,6 +34,10 @@ private slots:
 
     void on_commandLinkButtonID_clicked();
 
+    void on_spinBoxID_valueChanged(const QString &arg1);
+
+    void on_radioButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     nourriture tmpnourriture;

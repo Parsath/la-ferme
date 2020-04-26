@@ -115,33 +115,21 @@ QSqlQueryModel * nourriture::trieId()
     return  model;
 }
 
-bool nourriture::controle_id(int idd)
+bool nourriture::controle_id(const int idd)
 {  
-  /* QSqlQueryModel *model= new QSqlQueryModel;
-   QString res= QString::number(idd);
-   model->setQuery("SELECT id FROM nourriture WHERE id="+res+" ");
-   if (model)
-      return false;
-
-   return true;*/
-
-   /*QSqlQuery query;
-   QString res= QString::number(idd);
-   query.prepare("SELECT id FROM nourriture WHERE id="+res+" ");
-   query.bindValue(":id", res);
-   if(    query.exec())
-       return false;
-
-   return true;
-
-  /// QSqlQueryModel *model;
-   QSqlQuery query;
-   QString res= QString::number(idd);
-   query.prepare("SELECT id FROM nourriture WHERE ID like :test ");
-   query.bindValue(":test", res+"%");
-   query.exec();
-   model->setQuery(query);
-   if (model == res)*/
+    QSqlQuery query;
+    query.prepare("SELECT * FROM nourriture");
+    if(query.exec())
+    {
+        while(query.next())
+        {
+            if(idd == query.value(0).toInt())
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 }
 
 
