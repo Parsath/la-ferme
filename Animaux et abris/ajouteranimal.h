@@ -15,6 +15,9 @@
 #include <QFile>
 #include <QTextStream>
 #include <QMessageBox>
+#include <QDir>
+#include <QPrinter>
+#include <QPainter>
 #include "gestionanimal.h"
 
 class AjouterAnimal : public QWizard

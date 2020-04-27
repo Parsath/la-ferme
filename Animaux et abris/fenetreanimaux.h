@@ -17,6 +17,7 @@
 #include <QSqlDatabase>
 #include "modifieranimal.h"
 #include "ajouteranimal.h"
+#include "smtp.h"
 
 class FenetreAnimaux : public QWidget
 {

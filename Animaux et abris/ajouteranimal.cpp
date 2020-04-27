@@ -28,7 +28,7 @@ void AjouterAnimal::accept()
 
     if(m_animal->ajouterAnimal())
     {
-        QMessageBox::information(nullptr,"Ajout","Votre ajout a été effectué avec succès");
+        QMessageBox::information(nullptr,"Ajout","Votre ajout a été effectué avec succès et un pdf a été créé contenant les informations qui concernent votre animal.");
     }
     else
     {

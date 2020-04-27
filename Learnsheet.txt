@@ -87,6 +87,8 @@ Day 7: 25/04/2020 13h13
 
     STEP 1 IN PROGRESS
 
+    STEP 1 Completed at 19h00
+
     Notes:
         *I Fixed the layout
         *Added A DELETE BUTTON
@@ -98,3 +100,18 @@ Day 7: 25/04/2020 13h13
 WORKTIME: 5H10M
 
 Stopping time: 25/04/2020 19h07
+
+
+
+Day 8: 27/04/2020 12h38
+
+    STEP 2:
+        *Implementing mailing into my project.
+
+    Notes:
+        *This line of code is VITAL for the SMTP mailing to work:
+            -qDebug()<<QSslSocket::supportsSsl() << QSslSocket::sslLibraryBuildVersionString();
+
+WORKTIME:
+
+Stopping time: 27/04/2020

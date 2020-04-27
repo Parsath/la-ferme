@@ -68,14 +68,23 @@ void FenetreAnimaux::ongletSupprimer()
 
 void FenetreAnimaux::validerSuppression()
 {
+    Smtp *smtp = new Smtp("notificationlaferme@gmail.com", "laferme123", "smtp.gmail.com");
 
     if( !surnomAnimal->text().isEmpty() )
     {
         if(GestionAnimal::verifierExistenceSurnom( surnomAnimal->text() ) )
         {
-            GestionAnimal::supprimerAnimal( surnomAnimal->text() );
-            QMessageBox::information(this, "Erreur", "Adieu " + surnomAnimal->text());
-            afficherOnglet();
+            smtp->sendMail("notificationlaferme@gmail.com", "bilel.taktak@esprit.tn" , "Suppression d'un animal","Bonjour Monsieur/Madame L'administrateur/administratrice,\n\n" + surnomAnimal->text() + " a été supprimé de la base de donnée." + "\n\nCordialement,\nService de notification La Ferme.");
+            if(GestionAnimal::supprimerAnimal( surnomAnimal->text() ))
+            {
+                QMessageBox::information(this, "Adieu", surnomAnimal->text() +  " nous quitte aujourd'hui.." );
+                afficherOnglet();
+            }
+            else
+            {
+                QMessageBox::critical(this, "Erreur", "La suppression n'a pas été effectué." );
+
+            }
         }
         else
         {
@@ -90,6 +99,8 @@ void FenetreAnimaux::validerSuppression()
     }
 
     dialogSuppression->accept();
+
+    QObject::connect(smtp, SIGNAL(status(QString)), nullptr, SLOT(mailSent(QString)));
 }
 
 void FenetreAnimaux::ongletModifier()

@@ -1,7 +1,10 @@
-QT       += core gui sql
-QT += widgets multimedia
+QT       += core gui sql network
+QT += widgets multimedia printsupport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
+TARGET = smtp
+TEMPLATE = app
 
 CONFIG += c++11
 
@@ -16,14 +19,16 @@ SOURCES += \
     fenetreanimaux.cpp \
     gestionanimal.cpp \
     main.cpp \
-    modifieranimal.cpp
+    modifieranimal.cpp \
+    smtp.cpp
 
 HEADERS += \
     ajouteranimal.h \
     connexion.h \
     fenetreanimaux.h \
     gestionanimal.h \
-    modifieranimal.h
+    modifieranimal.h \
+    smtp.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

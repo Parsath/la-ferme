@@ -13,6 +13,9 @@
 #include <QSqlTableModel>
 #include <QTableWidget>
 #include <QPushButton>
+#include <QDir>
+#include <QPainter>
+#include <QPrinter>
 
 class GestionAnimal
 {
@@ -22,6 +25,7 @@ class GestionAnimal
         static bool verifierExistenceSurnom(const QString &surnom);
         static bool verifierFoyerValide(const QString &race,const QString &foyer);
         static bool supprimerAnimal(QString surnom);
+        static void fichierAnimal(QString const &race, QString const& surnom, QString const& qualite, int const& valeur, QString const& objectif, QString const& foyer, int const& age);
         bool ajouterAnimal();
         static QSqlQueryModel * afficherAnimaux(const QString &race);
 

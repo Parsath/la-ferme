@@ -15,7 +15,7 @@ create table abris
 
 create table animaux
 (
-id_ani number, surnom varchar2(100), race_ani varchar2(100), qualite varchar2(100), valeur number, objectif varchar2(100), foyer varchar2(100), âge number
+    id_ani number, surnom varchar2(100), race_ani varchar2(100), qualite varchar2(100), valeur number, objectif varchar2(100), foyer varchar2(100), âge number
 );
  
 CREATE TABLE NOURRITURE
