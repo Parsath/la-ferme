@@ -111,7 +111,9 @@ Day 8: 27/04/2020 12h38
     Notes:
         *This line of code is VITAL for the SMTP mailing to work:
             -qDebug()<<QSslSocket::supportsSsl() << QSslSocket::sslLibraryBuildVersionString();
+        *Succesfully Created the MAILING FUNCTION
+        *Succesfully Created the EXPORT TO PDF Function
 
-WORKTIME:
+WORKTIME: 5H26M
 
-Stopping time: 27/04/2020
+Stopping time: 27/04/2020 18h45
