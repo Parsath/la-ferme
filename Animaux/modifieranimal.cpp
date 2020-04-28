@@ -77,7 +77,7 @@ PageUneModification::PageUneModification(QWidget *parent) : QWizardPage(parent)
     m_raceLayout->addWidget(m_race);
     m_raceLayout->addWidget(m_raceAdd);
 
-    QFile *m_fichierRace = new QFile("C:/Users/Asus/Desktop/Dev/Qt/Projet Qt/Animaux et abris/races.txt");
+    QFile *m_fichierRace = new QFile("Textes/races.txt");
     QString *m_raceString = new QString();
     QTextStream out(m_fichierRace);
 
@@ -97,7 +97,7 @@ PageUneModification::PageUneModification(QWidget *parent) : QWizardPage(parent)
     m_foyerLayout->addWidget(m_foyer);
     m_foyerLayout->addWidget(m_foyerAdd);
 
-    QFile *m_fichierFoyer = new QFile("C:/Users/Asus/Desktop/Dev/Qt/Projet Qt/Animaux et abris/foyers.txt");
+    QFile *m_fichierFoyer = new QFile("Textes/foyers.txt");
     QString *m_foyerString = new QString();
     QTextStream outFoyer(m_fichierFoyer);
 
@@ -160,7 +160,7 @@ void PageUneModification::validerRace()
 
     if( !m_nomRace->text().isEmpty() )
     {
-        QFile *m_fichierRace = new QFile("C:/Users/Asus/Desktop/Dev/Qt/Projet Qt/Animaux et abris/races.txt");
+        QFile *m_fichierRace = new QFile("Textes/races.txt");
         QTextStream out(m_fichierRace);
         QString *nomRace = new QString();
         *nomRace = m_nomRace->text();
@@ -211,7 +211,7 @@ void PageUneModification::validerFoyer()
 
     if( !m_nomFoyer->text().isEmpty() )
     {
-        QFile *m_fichierFoyer = new QFile("C:/Users/Asus/Desktop/Dev/Qt/Projet Qt/Animaux et abris/foyers.txt");
+        QFile *m_fichierFoyer = new QFile("Textes/foyers.txt");
         QTextStream out(m_fichierFoyer);
         QString *nomFoyer = new QString();
         *nomFoyer = m_nomFoyer->text();
@@ -249,7 +249,7 @@ PageDeuxModification::PageDeuxModification(QWidget *parent) : QWizardPage(parent
     m_qualitesLabel->setBuddy(m_qualites);
     QHBoxLayout *m_qualitesLayout = new QHBoxLayout();
 
-    QFile *m_fichierQualites = new QFile("C:/Users/Asus/Desktop/Dev/Qt/Projet Qt/Animaux et abris/qualites.txt");
+    QFile *m_fichierQualites = new QFile("Textes/qualites.txt");
     QString *m_qualitesString = new QString();
     QTextStream outQualite(m_fichierQualites);
 
@@ -276,7 +276,7 @@ PageDeuxModification::PageDeuxModification(QWidget *parent) : QWizardPage(parent
     m_objectifsLabel->setBuddy(m_objectifs);
     QHBoxLayout *m_objectifsLayout = new QHBoxLayout();
 
-    QFile *m_fichierObjectif = new QFile("C:/Users/Asus/Desktop/Dev/Qt/Projet Qt/Animaux et abris/objectifs.txt");
+    QFile *m_fichierObjectif = new QFile("Textes/objectifs.txt");
     QString *m_objectifString = new QString();
     QTextStream outObjectif(m_fichierObjectif);
 

@@ -25,7 +25,7 @@ class FenetreAnimaux : public QWidget
 
     public:
 
-        FenetreAnimaux();   //  Le Constructeur va me permettre de créer la fenêtre Animaux
+        FenetreAnimaux(QWidget *parent = nullptr);   //  Le Constructeur va me permettre de créer la fenêtre Animaux
 
     public slots:
         void ouvrirFenetreAjout();

@@ -1,6 +1,6 @@
 #include "fenetreanimaux.h"
 
-FenetreAnimaux::FenetreAnimaux() : QWidget()
+FenetreAnimaux::FenetreAnimaux(QWidget *parent) : QWidget(parent)
 {
     m_onglets = new QTabWidget(this);
     m_race = new QString();
@@ -156,7 +156,7 @@ void FenetreAnimaux::afficherOnglet()
 
     m_onglets->clear();
 
-    m_fichierRaces = new QFile("C:/Users/Asus/Desktop/Dev/Qt/Projet Qt/Animaux et abris/races.txt");
+    m_fichierRaces = new QFile("Textes/races.txt");
 
     QTextStream out(m_fichierRaces);
 

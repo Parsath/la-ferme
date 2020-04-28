@@ -31,7 +31,6 @@ int main(int argc, char *argv[])
         QObject::tr("Echec de la connexion.\n""Click Cancel to exit."), QMessageBox::Cancel);
     }
 
-
     /*QPrinter printer2;
     printer2.setOutputFormat(QPrinter::PdfFormat);
     //printer2.setOutputFileName("C:\\Users\\Asus\\Desktop\\Dev\\Qt\\Projet Qt\\Animaux et abris\\test.pdf");
