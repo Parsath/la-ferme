@@ -108,6 +108,13 @@ Day 8: 27/04/2020 12h38
     STEP 2:
         *Implementing mailing into my project.
 
+    STEP 2 Completed at 16h00
+
+    STEP 3:
+        *Implementing "export to PDF" into my project.
+
+    STEP 3 Completed at 18h45
+
     Notes:
         *This line of code is VITAL for the SMTP mailing to work:
             -qDebug()<<QSslSocket::supportsSsl() << QSslSocket::sslLibraryBuildVersionString();
@@ -117,3 +124,19 @@ Day 8: 27/04/2020 12h38
 WORKTIME: 5H26M
 
 Stopping time: 27/04/2020 18h45
+
+
+
+Day 9: 28/04/2020 12h33
+
+    STEP 4:
+        *Create the CRUD for the "Shelter" Part of my PROJECT
+
+    STEP 4 Completed at 15h30
+
+    Notes:
+        *My part of the project is complete, the last thing to do is to SIGN IN TO TRELLO
+
+WORKTIME: 3H41M
+
+Stopping: 28/04/2020 16h14
