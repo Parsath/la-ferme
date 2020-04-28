@@ -1,5 +1,0 @@
-Cheval
-Vache
-Chien
-Chat
-Oiseau

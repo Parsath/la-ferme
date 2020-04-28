@@ -1,8 +1,0 @@
-Poulailler
-Etable
-Ecurie
-Bergerie
-Porcherie
-Clapier
-Batterie d'élevage
-Pigeonnier

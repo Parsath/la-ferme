@@ -1,6 +1,0 @@
-Excellent
-Bon
-Normal
-Mediocre
-Mauvais
-Catastrophique
