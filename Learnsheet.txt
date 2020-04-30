@@ -139,4 +139,24 @@ Day 9: 28/04/2020 12h33
 
 WORKTIME: 3H41M
 
-Stopping: 28/04/2020 16h14
+Stopping time: 28/04/2020 16h14
+
+
+
+Day 10: 30/04/2020 12h59
+
+    STEP 5:
+        *Create a "Sort" Function on my Shelter and Animals tables.
+
+    STEP 5 Completed at 13h18
+
+    STEP 6:
+        *Take screenshots of all my work and send it to my professor.
+
+
+    Notes:
+        *
+
+WORKTIME:
+
+Stopping time: 30/04/2020
