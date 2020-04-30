@@ -186,8 +186,12 @@ void FenetreAnimaux::creationOnglets(QString race, QTabWidget &onglets)
     maTable = GestionAnimal::afficherAnimaux(race);
 
     view = new QTableView();
+    QSortFilterProxyModel *proxyModel = new QSortFilterProxyModel();
 
-    view->setModel(maTable);
+    proxyModel->setSourceModel(maTable);
+    view->setModel(proxyModel);
+    view->setSortingEnabled(true);
+
 
     view->show();
     view->hideColumn(0);

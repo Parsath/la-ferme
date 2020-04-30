@@ -15,6 +15,7 @@
 #include <QTableView>
 #include <QSqlQuery>
 #include <QSqlDatabase>
+#include <QSortFilterProxyModel>
 #include "ajouterabri.h"
 #include "modifierabri.h"
 

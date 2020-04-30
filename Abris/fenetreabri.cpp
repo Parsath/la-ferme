@@ -165,9 +165,14 @@ void FenetreAbri::creationOnglets(QString foyer, QTabWidget &onglets)
     QSqlQueryModel *maTable = new QSqlQueryModel();
     maTable = GestionAbri::afficherAbris(foyer);
 
-    view = new QTableView();
 
-    view->setModel(maTable);
+    view = new QTableView();
+    QSortFilterProxyModel *proxyModel = new QSortFilterProxyModel();
+
+    proxyModel->setSourceModel(maTable);
+    view->setModel(proxyModel);
+
+    view->setSortingEnabled(true);
 
     view->show();
     view->hideColumn(2);

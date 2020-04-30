@@ -15,6 +15,7 @@
 #include <QTableView>
 #include <QSqlQuery>
 #include <QSqlDatabase>
+#include <QSortFilterProxyModel>
 #include "modifieranimal.h"
 #include "ajouteranimal.h"
 #include "smtp.h"
