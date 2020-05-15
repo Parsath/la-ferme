@@ -32,7 +32,7 @@ create table animaux
 );
 1- ALTER TABLE animaux
 ADD (
-   CONSTRAINT animaux_pk PRIMARY KEY (id_abris)
+   CONSTRAINT animaux_pk PRIMARY KEY (id_ani)
 );
 2- CREATE SEQUENCE animaux_sequence;
 3- CREATE OR REPLACE TRIGGER animaux_on_insert
