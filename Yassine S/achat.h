@@ -19,6 +19,7 @@ public:
     bool  Supprimer(QString id);
     QSqlQueryModel *  Recherche(QString col ,QString val);
     QSqlQueryModel *  tri(QString col);
+    bool modifier(int id,QString nv,QString nomc);
 
 };
 

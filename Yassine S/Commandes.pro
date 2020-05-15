@@ -1,4 +1,4 @@
-QT       += core gui sql
+QT       += core gui sql printsupport charts
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -21,6 +21,9 @@ SOURCES += \
     connexion.cpp \
     main.cpp \
     mainwindow.cpp \
+    modif.cpp \
+    statistique.cpp \
+    statistiquea.cpp \
     vente.cpp \
     ventes.cpp
 
@@ -29,12 +32,16 @@ HEADERS += \
     achats.h \
     connexion.h \
     mainwindow.h \
+    modif.h \
+    statistique.h \
+    statistiquea.h \
     vente.h \
     ventes.h
 
 FORMS += \
     achats.ui \
     mainwindow.ui \
+    modif.ui \
     ventes.ui
 
 # Default rules for deployment.

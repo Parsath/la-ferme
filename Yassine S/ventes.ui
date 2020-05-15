@@ -1166,9 +1166,9 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
     <widget class="QTabWidget" name="tabWidget">
      <property name="geometry">
       <rect>
-       <x>-10</x>
+       <x>0</x>
        <y>0</y>
-       <width>801</width>
+       <width>1021</width>
        <height>401</height>
       </rect>
      </property>
@@ -3577,7 +3577,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
        </property>
        <item>
         <property name="text">
-         <string> </string>
+         <string/>
         </property>
        </item>
        <item>
@@ -3812,6 +3812,56 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
         </item>
        </layout>
       </widget>
+      <widget class="QPushButton" name="Imprimer">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>290</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Imprimer</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="ttab">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>270</y>
+         <width>47</width>
+         <height>14</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QTextBrowser" name="testt">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>390</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>28</pointsize>
+        </font>
+       </property>
+      </widget>
+      <zorder>testt</zorder>
+      <zorder>ventes</zorder>
+      <zorder>pushButton</zorder>
+      <zorder>comboBox</zorder>
+      <zorder>label_10</zorder>
+      <zorder>pb_supprimer</zorder>
+      <zorder>layoutWidget_2</zorder>
+      <zorder>Imprimer</zorder>
+      <zorder>ttab</zorder>
      </widget>
      <widget class="QWidget" name="tab_9">
       <attribute name="title">
@@ -3874,6 +3924,81 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
        <property name="pixmap">
         <pixmap>../../ttt/back.jpg</pixmap>
        </property>
+      </widget>
+      <widget class="QComboBox" name="types">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>20</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>PIE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BARRE</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_71">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>10</y>
+         <width>71</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>:/sounds/PNG Files/64x64/stats.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_73">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>10</y>
+         <width>71</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>:/sounds/PNG Files/64x64/stats-up.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QWidget" name="wid_2" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>89</y>
+         <width>751</width>
+         <height>281</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="lab_11">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>5</y>
+          <width>891</width>
+          <height>351</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
       </widget>
      </widget>
     </widget>

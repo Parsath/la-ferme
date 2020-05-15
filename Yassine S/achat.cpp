@@ -62,4 +62,19 @@ QSqlQueryModel * Achat :: tri(QString col){
     model->setHeaderData(3,Qt::Horizontal,QObject::tr("Prix"));
         return model ;
 }
-
+bool Achat :: modifier(int id,QString nv,QString nomc){
+     QString header ;
+    QSqlQuery q;
+    if (nomc!="Date"){
+       header = "UPDATE Achat SET "+nomc+"=:nv WHERE (ID= :id);";
+        q.prepare(header);
+        q.bindValue(":nv",nv);
+        q.bindValue(":id",id);
+    }else {
+       header =  "UPDATE Achat SET DATEA= TO_DATE(:date, 'MM/DD/YYYY') WHERE (ID= :id);";
+       q.prepare(header);
+    q.bindValue(":date",nv);
+    q.bindValue(":id",id);
+    }
+    return q.exec();
+}
