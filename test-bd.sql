@@ -2,7 +2,10 @@ CREATE TABLE mat_e
 (
     id_mat number , nom varchar2(10),quantite number,date_ajout date
 );
-
+CREATE TABLE produit
+(
+    ID_p number, NOM varchar2(255), descrip varchar2(255), prix number;	
+);
 CREATE TABLE mat_a
 (
     id_mat number , nom varchar2(10),etat number,date_ajout date
