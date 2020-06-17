@@ -4,7 +4,11 @@ CREATE TABLE mat_e
 );
 CREATE TABLE produit
 (
-    ID_p number, NOM varchar2(255), descrip varchar2(255), prix number;	
+    ID_p number, NOM varchar2(255), descrip varchar2(255), prix number
+);
+CREATE TABLE prod_v
+(
+    ID_p number, NOM varchar2(255), descrip varchar2(255), prix number	
 );
 CREATE TABLE mat_a
 (
